@@ -1,0 +1,11 @@
+<view class="container">
+    <text> 请输入第一个数</text>
+    <input placeholder="请输入第一个数" type="number" bindinput="onInputNum1" />
+    <text> 请输入第二个数</text>
+    <input placeholder="请输入第二个数" type="number" bindinput="onInputNum2" />
+    <!-- bindtap绑定语法 -->
+    <button bindtap="compare">比较大小</button>
+    <view class="result">
+        {{result}}
+    </view>
+</view>
