@@ -1,0 +1,4 @@
+<!--pages/index3/index3.wxml-->
+<text>比较城市和农村互联网的普及率</text>
+<text>没写,感觉和比大差不多</text>
+<button class="nextButton" bind:tap="goToNextPage" > 下一个</button>

@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="border">
+        <view class="title">1.普通绑定</view>
+        <button type="primary" bindtap="btnClick">{{btnText}}</button>
+        <text>{{content}}</text>
+    </view>
+    <view class="border">
+        <view class="title">2.组件属性绑定</view>
+        <view id="{{id}}">这是带有id的组件</view>
+    </view>
+    <view class="border">
+        <view class="title">3.控制属性绑定</view>
+        <view wx:if="{{condition}}">condition的值为false时不显示</view>
+    </view>
+    <view class="border">
+        <view class="title">4.关键字绑定</view>
+        <view wx:if="{{false}}">关键字绑定测试false</view>
+        <view wx:if="{{true}}">关键字绑定测试true</view>
+    </view>
+    <view class="border">
+        <view class="title">5.运算符绑定</view>
+        <view hidden="{{result ? true : false}}">5.1三元运算result为false时显示</view>
+        <view>5.2数学运算绑定{{a + b}} + {{c}} + d</view>
+        <view wx:if="{{length > 3}}">5.3逻辑判断length大于3时显示</view>
+    </view>
+    <view class="border">
+        <view class="title">6.组合绑定</view>
+        <view>{{'3.4字符串运算: "Hello, " + name'}}</view>
+        <view>5.5数据库程序运行库，{{object.key2}} = {{array[1]}}</view>
+        <view>{{[1, 2, y, 4]}} > {item}</view>
+    </view>
+</view>
+<button class="nextButton" bind:tap="goToNextPage" > 下一个</button>

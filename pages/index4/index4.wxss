@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f8f8f8;
+  }
+  
+  .table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+  }
+  .nextButton {
+    width: 200rpx;
+    height: 70rpx;
+    background-color: #cdd4aa;
+    color: white;
+    font-size: 28rpx;
+    border-radius: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50rpx auto;
+    transition: all 0.3s ease;
+}
+
+.nextButton:active {
+    background-color: #e2d987;
+    transform: translate(-50%, -50%) scale(0.95);
+}

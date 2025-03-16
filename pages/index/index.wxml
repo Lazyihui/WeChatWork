@@ -4,8 +4,9 @@
     <text> 请输入第二个数</text>
     <input placeholder="请输入第二个数" type="number" bindinput="onInputNum2" />
     <!-- bindtap绑定语法 -->
-    <button bindtap="compare">比较大小</button>
+    <button class="curButton" bindtap="compare">比较大小</button>
     <view class="result">
         {{result}}
     </view>
+    <button class="nextButton" bindtap="goToNextPage">下一个</button>
 </view>

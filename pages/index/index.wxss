@@ -6,24 +6,52 @@
     justify-content: center;
     height: 100vh;
     padding: 20rpx;
-  }
-  
-  input {
+}
+
+input {
     width: 80%;
     height: 80rpx;
     border: 1rpx solid #ccc;
     margin: 20rpx 0;
     padding: 10rpx;
     font-size: 28rpx;
-  }
-  
-  button {
+}
+
+.curButton {
     width: 80%;
     margin: 20rpx 0;
-  }
-  
-  .result {
+}
+
+.result {
     margin-top: 40rpx;
     font-size: 32rpx;
     color: #333;
-  }
+}
+
+.nextButton {
+    width: 200rpx;
+    /* 按钮宽度 */
+    height: 80rpx;
+    /* 按钮高度 */
+    background-color: #cdd4aa;
+    /* 背景颜色 */
+    color: white;
+    /* 文字颜色 */
+    font-size: 28rpx;
+    /* 文字大小 */
+    border-radius: 10rpx;
+    /* 圆角 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20rpx auto;
+    transition: all 0.3s ease;
+
+}
+
+.nextButton:active {
+    background-color: #e2d987;
+    /* 点击时的背景颜色 */
+    transform: translate(-50%, -50%) scale(0.95);
+    /* 点击时缩小 */
+}

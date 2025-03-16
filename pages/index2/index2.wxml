@@ -1,0 +1,11 @@
+<view class="container">
+    <!-- type默认样式默认按钮，灰色背景，黑色文字。primary主要按钮，蓝色背景，白色文字。通常用于重要操作。
+worn警告按钮，红色背景，白色文字。通常用于危险操作（如删除）。 -->
+    <button type="default" plain="true" bindtap="switch">随机排序</button>
+    <button type="default" plain="true" bindtap="addToFront">Add to the front</button>
+    <view wx:for="{{objectArray}}">
+        <switch checked="{{item.checked}}"></switch>
+        <text>{{item.unique}}</text>
+    </view>
+</view>
+<button class="nextButton" bind:tap="goToNextPage">下一个</button>

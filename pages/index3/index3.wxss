@@ -1,0 +1,20 @@
+/* pages/index3/index3.wxss */
+.nextButton {
+    width: 200rpx;
+    height: 70rpx;
+    background-color: #cdd4aa;
+    color: white;
+    font-size: 28rpx;
+    border-radius: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50rpx auto;
+    transition: all 0.3s ease;
+}
+
+
+.nextButton:active {
+    background-color: #e2d987;
+    transform: translate(-50%, -50%) scale(0.95);
+}
